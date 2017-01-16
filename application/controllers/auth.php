@@ -20,15 +20,11 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
 		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
 
-		if($this->form_validation->run() == false)
-		{
-			//Field validation failed.  User redirected to login page
+		if($this->form_validation->run() == false) { //Field validation failed.  User redirected to login page
 			$this->load->view('auth/login');
 		}
-		else
-		{
-              //Go to private area
-			  redirect('comments/1', 'refresh');
+		else { 	//Go to private area
+			redirect('comments/1', 'refresh');
 		}
 
 	}
@@ -39,10 +35,8 @@ class Auth extends CI_Controller {
 			$username = $this->input->post('username');
 
 			//query the database
-			if( $result = $this->user->login($username, $password) )
-			{
-				foreach($result as $row)
-				{
+			if( $result = $this->user->login($username, $password) ){
+				foreach ($result as $row){
 					$sessionArray = [
 						'id' => $row->id,
 						'username' => $row->username
@@ -52,8 +46,7 @@ class Auth extends CI_Controller {
 				}
 				return true;
 			}
-			else
-			{
+			else {
 				$this->form_validation->set_message('check_database', 'Invalid username or password');
 				return false;
 			}
