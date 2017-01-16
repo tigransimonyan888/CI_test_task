@@ -38,7 +38,10 @@
 |
 */
 
-$route['default_controller'] = "comment/index/1";
+$route['default_controller'] = "comments";
+
+$route['login']  = 'auth/index';
+$route['logout'] = 'auth/logout';
 $route['comments/(:num)'] = 'comment/index/$1';
 
 $route['404_override'] = '';

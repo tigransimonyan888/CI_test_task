@@ -1,0 +1,31 @@
+body {
+    background-color: #7DB1EF;
+}
+
+.login-form {
+    width: 400px;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="submit"] {
+    background-color: #7DB1EF;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: #fff;
+}
+
+div.error {
+    color: #FF0000;
+    font-size: 13px;
+}
