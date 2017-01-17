@@ -1,0 +1,101 @@
+/******** general ********/
+
+body {
+    background-color: #eee;
+}
+
+/******** end of general ********/
+
+
+/******** header ********/
+
+header {
+    background-color: #7DB1EF;
+    margin-bottom: 35px;
+    overflow: hidden;
+    padding: 25px 50px;
+}
+
+header .header-text {
+    font-size: 23px;
+    color: #fff;
+}
+
+header a, header a:hover {
+    color: #fff;
+}
+
+/******** end of header ********/
+
+
+/******** main content ********/
+
+ul.comment-list {
+    padding-left: 0;
+}
+
+ul.comment-list li {
+    background-color: #fff;
+    border-radius: 5px;
+    list-style: none;
+    margin-bottom: 35px;
+    padding: 33px;
+}
+
+ul.comment-list li .name {
+    color: #2793CA;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+ul.comment-list li .date {
+    color: #ccc;
+}
+
+ul.comment-list li .text {
+    color: #111;
+    margin-top: 11px;
+}
+
+.typing-users {
+    padding: 11px;
+    background-color: #fff;
+    display: none
+}
+
+.typing-users .user {
+    color: #7DB1EF;
+}
+
+.typing-users img {
+    margin-right: 11px;
+}
+
+.btn-comment {
+    background-color: #7DB1EF;
+    color: #fff;
+    margin-top: 11px;
+}
+
+.removed-text {
+    color: #ff0000;
+    font-size: 12px;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    padding: 9px;
+}
+
+/******** end of main content ********/
+
+
+/******** footer ********/
+
+footer {
+    padding: 15px;
+    font-size: 13px;
+}
+
+/******** end of footer ********/
