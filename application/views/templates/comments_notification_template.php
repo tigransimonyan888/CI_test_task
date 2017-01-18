@@ -1,0 +1,1 @@
+<div class="new-comments">There <?php echo $message_part; ?>. Click <span class="get-new-comments">here</span> to view.</div>

@@ -43,6 +43,9 @@ $route['default_controller'] = "comments";
 $route['login']  = 'auth/index';
 $route['logout'] = 'auth/logout';
 $route['comments/(:num)'] = 'comment/index/$1';
+$route['check-new-comments'] = 'comment/check_new_comments';
+$route['comments/set-typing-user'] = 'comment/setTypingUser';
+$route['comments/get-typing-users/(:num)'] = 'comment/getTypingUsers/$1';
 
 $route['404_override'] = '';
 

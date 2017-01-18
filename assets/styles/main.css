@@ -77,6 +77,11 @@ ul.comment-list li .text {
     margin-top: 11px;
 }
 
+.btn-comment:hover {
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 .removed-text {
     color: #ff0000;
     font-size: 12px;
@@ -86,6 +91,17 @@ ul.comment-list li .text {
     color: #ff0000;
     font-size: 12px;
     padding: 9px;
+}
+
+.new-comments {
+    padding: 11px;
+    background-color: #FDE073;
+    color: #111;
+}
+
+.new-comments .get-new-comments {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /******** end of main content ********/

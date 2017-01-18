@@ -3,10 +3,13 @@
 	<ul class="comment-list">
 		<?php $this->load->view('templates/comment_template'); ?>
 	</ul>
-
+	
+	<div id="comments-notification-box"></div>
+	
 	<div class="typing-users">
 		<img src="<?php echo base_url('assets/img/ellipsis.gif'); ?>">
 		<span class="user"></span>
+		<span class="type"></span>
 	</div>
 
 	<?php
