@@ -17,11 +17,9 @@ class Auth extends CI_Controller {
 		//This method will have the credentials validation
 		$this->load->library('form_validation');
 
-// test changes // 
 
-
-//		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
-//		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
+		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
 
 		if($this->form_validation->run() == false) { //Field validation failed.  User redirected to login page
 			$this->load->view('auth/login');
