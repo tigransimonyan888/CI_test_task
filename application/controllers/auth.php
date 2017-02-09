@@ -17,7 +17,26 @@ class Auth extends CI_Controller {
 		//This method will have the credentials validation
 		$this->load->library('form_validation');
 
-// test changes // 
+// test changes //
+
+		$this->form_validation->set_rules('u-name', 'Username', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('u-password', 'Password', 'trim|required|xss_clean|callback_check_database');
+
+//		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
+//		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
+
+        if(true){
+            echo 'rebase 1 , commit 1';
+        }
+
+        if(true){
+            echo 'rebase 2 , commit 2';
+        }
+
+        if(true){
+            echo 'rebase 3 , commit 3';
+        }
+// test changes //
 
 		$this->form_validation->set_rules('u-name', 'Username', 'trim|required|xss_clean');
 		$this->form_validation->set_rules('u-password', 'Password', 'trim|required|xss_clean|callback_check_database');
